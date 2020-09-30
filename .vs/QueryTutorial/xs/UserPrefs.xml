@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{46CC3070-1736-4F99-A193-6B23E3CFD06B}|Default">
+  <MonoDevelop.Ide.ItemProperties.QueryTutorial PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/TransactionController.cs">
+    <Files>
+      <File FileName="Controllers/TransactionController.cs" Line="168" Column="34" />
+      <File FileName="Helper.cs" />
+      <File FileName="wwwroot/js/site.js" />
+      <File FileName="Views/Transaction/AddOrEdit.cshtml" />
+      <File FileName="Views/Transaction/Delete.cshtml" />
+      <File FileName="Views/Transaction/Index.cshtml" />
+      <File FileName="Views/Transaction/_ViewAll.cshtml" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="wwwroot/css/site.css" />
+      <File FileName="Models/TransactionModel.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
