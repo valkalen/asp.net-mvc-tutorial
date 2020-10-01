@@ -147,3 +147,16 @@ jQueryAjaxDelete = form => {
             });
     });
     */
+
+//refresh redirect
+/* 
+public ActionResult AddData(CandidateViewModel viewModel)  
+{
+    var newCandidateId = 0;  
+    newCandidateId = this._serviceClient.AddCandidate(viewModel); 
+    string ReturnURL = "/DisplayCandidate/"+newCandidateId;
+    return JSON(ReturnURL);  
+}
+//in ajax method
+Onsuccess(function(retURL){ window.location(retURL); })
+*/
