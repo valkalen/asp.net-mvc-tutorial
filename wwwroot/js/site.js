@@ -79,3 +79,71 @@ jQueryAjaxDelete = form => {
     //prevent default form submit event
     return false;
 }
+/*
+    deleteBannerGroupToastr = (event, form) => {
+        event.preventDefault();
+        var groupName = $("#deleteGroupName").html();
+        $.ajax({
+            async: true,
+            type: 'POST',
+            data: null,
+            url: form.action,
+            contentType: false,
+            processData: false,      
+            success: function (res) {
+                if (res.success) {
+                    $('#modal').modal('hide');
+                    toastr.success('Banner Group ' + groupName + ' has been successfully deleted', 'Success Alert', { timeOut: 5000 });
+                } else {
+                    $('#modal').modal('hide');
+                    toastr.info('Banner Group ' + groupName + ' has active zone assignment and cannot be deleted', 'Information Alert', { timeOut: 5000 });
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                $('#modal').modal('hide');
+                toastr.error('Cannot delete Banner Group ' + groupName, 'Error Alert', { timeOut: 5000 });
+            }
+        })
+    }
+*/
+/*
+        $(document).ready(function () {
+            $('form').on('submit', function (event) {
+                event.preventDefault();
+                const form = $(this);
+                const groupName = $('#groupName').html();
+                console.log(form.attr('action'));
+                $.ajax({
+                    async: true,
+                    type: 'POST',
+                    url: form.attr('action'),
+                    beforeSend: function (request) {
+                        request.setRequestHeader("RequestVerificationToken", $("[name='__RequestVerificationToken']").val());
+                    },
+                    data: form.serialize(),
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    success: function (result) {
+                        console.log(result);
+                        if (result.success) {
+                            toastr.success('Banner Group ' + groupName + ' has been successfully deleted', 'Success Alert', { timeOut: 5000 });
+                        } else {
+                            toastr.error('Banner Group ' + groupName + ' has active zone assignments and cannot be removed', 'Error Alert', { timeOut: 5000 });
+                        }
+                        form.remove();
+                        $('#modal').modal('hide');
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        $('#modal').modal('hide');
+                        toastr.error('Failed to remove Banner Group ' + groupName, 'Error Alert', { timeOut: 5000 });
+                    }
+                }).fail(function () {
+                    toastr.success('Banner Group ' + $('#groupName').html() + ' has been successfully deleted', 'Success Alert', { timeOut: 5000 });
+                }).always(function () {
+                    //window.location = '/Web/Groups/5';
+                });
+            });
+    });
+    */
